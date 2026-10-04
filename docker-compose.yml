@@ -10,11 +10,11 @@ services:
       - frontend
       - backend
   frontend:
-    image: તારું_DOCKER_USERNAME/frontend:latest
+    image: akshay0131/frontend:latest
     depends_on:
       - backend
   backend:
-    image: તારું_DOCKER_USERNAME/backend:latest
+    image: akshay0131/backend:latest
     environment:
       MONGO_URL: mongodb://mongodb:27017/studentdb
     depends_on:
